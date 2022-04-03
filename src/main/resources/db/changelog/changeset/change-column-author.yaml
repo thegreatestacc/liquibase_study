@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: change-column-in-author-table
+      author: vladimir
+      changes:
+        - renameColumn:
+            tableName: author
+            newColumnName: fullname
+            oldColumnName: name
